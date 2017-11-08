@@ -113,6 +113,7 @@ a{
 #close{
 	display: inline-block;
 	color: #4F4F4F;
+	border:none;
 }
 
 ::-webkit-input-placeholder { 
