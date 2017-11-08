@@ -1,0 +1,127 @@
+/*boxsizing*/
+*{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*ancho y margen de todo el contenido, fuente de la pagina*/
+body{
+	width: 100%;
+	margin:0;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+
+/*franja azul de header*/
+header{
+	height: 2.5em;
+	background-color: #015D93;
+	padding-top: 0.5em;
+	padding-left:40em; 
+}
+
+/*tamaño del logo del header*/
+.logo{
+	height: 1.5em;
+}
+
+/*color del contenido central, largo de pág*/
+main{
+	background-color: #0079BF;
+	height: 37.3em;
+	padding-top: 0.1em;
+	
+}
+nav{
+	margin-left: 0;
+	height:2em; 
+	width: 100%;
+}
+/*quitar estilo de lista a menu del contenido central*/
+ul{
+	list-style: none;
+}
+
+/*posicionar menu horizontal*/
+li{
+	float: left;
+	
+}
+
+/*quitar estilo de enlace a contenido del menu central*/
+a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*dar mas ancho a fuente de titulo menu*/
+.title{
+	font-weight: bolder;
+}
+
+/*linea en medio de menu, espacio entre icono estrella y texto*/
+.fa-star-o{
+	padding-left: 1em;
+	padding-right: 1em;
+	border-right: 2px solid #3394CC;
+}
+
+/*espacio entre icono candado y texto*/
+.fa-lock{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/*margen a seccion de tableros*/
+.tablero{
+	padding-left: 2.5em;
+}
+
+#container{
+	width: 17em;
+	padding: 0.3em;
+	
+	height: auto;
+	display: inline-block;
+	border-radius: 0.3em;
+}
+
+#list{
+	width: 19.4em;
+	background-color: rgba(0,0,0, 0.15);
+	border:none;
+	padding: 1em;
+	border-radius: 0.3em;
+}
+
+#buttons{
+	padding: 0.3em;
+}
+#save{
+	font-size: 0.9em;
+	font-weight: bolder;
+	color: #FFF;
+	display: inline-block;
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #519839;
+	border-radius: 0.3em;
+	border: none;
+}
+
+#close{
+	display: inline-block;
+	color: #4F4F4F;
+}
+
+::-webkit-input-placeholder { 
+  color: #95B8CC;
+  opacity: 1;
+
+}
+
+.after ::-webkit-input-placeholder { 
+  color: grey;
+
+}
