@@ -37,9 +37,11 @@ save.addEventListener('click', function(){
 	//crear elementos
 	var newList=document.createElement('div')
 	var nameList=document.createElement('p');
+	nameList.setAttribute('id', 'listTitle')
 	var nameContent= document.createTextNode(listName);
 	var addCard= document.createElement('a');
 	addCard.setAttribute('href', '#');
+	addCard.setAttribute('id', 'add');
 	var cardContent=document.createTextNode('Añadir una tarea');
 
 	//dar hijos a padres
@@ -55,8 +57,24 @@ save.addEventListener('click', function(){
 	newList.appendChild(addCard);
 	newContainer.appendChild(newList);
 
+	//añadir evento a texto de añadir tarea
+	addCard.addEventListener('click', function(){
+		addCard.classList.add('mostrar')
+	//crear textarea
+	var textArea= document.createElement('textarea');
+	textArea.classList.add('class', 'tarea')
+	//crear boton añadir
+	var addBot= document.createElement('button');
+	//texto en boton
+	var buttonContent=document.createTextNode('Añadir')
 
 
-
+	newList.appendChild(textArea);
+	addBot.appendChild(buttonContent);
+	newList.appendChild(addBot);
+});
 
 })
+
+
+
