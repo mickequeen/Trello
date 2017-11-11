@@ -80,10 +80,17 @@ a{
 #container{
 	width: 17em;
 	padding: 0.3em;
-	
 	height: auto;
 	display: inline-block;
 	border-radius: 0.3em;
+}
+/*clase a usar en evento*/
+.graybackground{
+	background-color: #E2E4E6;
+}
+/*clase de botonera*/
+.mostrar{
+	display: none;
 }
 
 #list{
@@ -114,6 +121,8 @@ a{
 	display: inline-block;
 	color: #4F4F4F;
 	border:none;
+	font-size: 1.3em;
+	padding-top: 0.1em;
 }
 
 ::-webkit-input-placeholder { 
