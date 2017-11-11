@@ -24,3 +24,39 @@ close.addEventListener('click', function(){
 	buttons.classList.add('mostrar');
 })
 
+//variable para nuevo contenedor
+var newContainer= document.getElementById('newContainer');
+
+//evento de click para boton guardar
+save.addEventListener('click', function(){
+	//rescatar nombre de lista
+	var listName=list.value;
+	//limpiar text area
+	document.getElementById('list').value="";
+
+	//crear elementos
+	var newList=document.createElement('div')
+	var nameList=document.createElement('p');
+	var nameContent= document.createTextNode(listName);
+	var addCard= document.createElement('a');
+	addCard.setAttribute('href', '#');
+	var cardContent=document.createTextNode('Añadir una tarea');
+
+	//dar hijos a padres
+
+	nameList.appendChild(nameContent);
+	addCard.appendChild(cardContent);
+
+	//ingresar en div vacio
+	newList.appendChild(nameList);
+	
+	//dar clase para que tenga misma forma y color que primer contenedor
+	newList.classList.add('newBox', 'graybackground');
+	newList.appendChild(addCard);
+	newContainer.appendChild(newList);
+
+
+
+
+
+})

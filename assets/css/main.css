@@ -49,7 +49,7 @@ li{
 }
 
 /*quitar estilo de enlace a contenido del menu central*/
-a{
+.nav{
 	text-decoration: none;
 	color: #FFF;
 }
@@ -75,14 +75,25 @@ a{
 /*margen a seccion de tableros*/
 .tablero{
 	padding-left: 2.5em;
+	vertical-align: top;
 }
 
-#container{
+.newBox{
 	width: 17em;
 	padding: 0.3em;
 	height: auto;
 	display: inline-block;
 	border-radius: 0.3em;
+	margin-left: 0.5em;
+}
+/*contenedor inicial*/
+.box{
+	width: 17em;
+	padding: 0.3em;
+	height: auto;
+	display: inline-block;
+	border-radius: 0.3em;
+	margin-left: 5px;
 }
 /*clase a usar en evento*/
 .graybackground{
@@ -104,6 +115,7 @@ a{
 #buttons{
 	padding: 0.3em;
 }
+
 #save{
 	font-size: 0.9em;
 	font-weight: bolder;
@@ -125,10 +137,17 @@ a{
 	padding-top: 0.1em;
 }
 
+#newContainer{
+	display: inline-block;
+	
+}
+
+
+
+
 ::-webkit-input-placeholder { 
   color: #95B8CC;
   opacity: 1;
-
 }
 
 .after ::-webkit-input-placeholder { 
