@@ -51,7 +51,6 @@ save.addEventListener('click', function(){
 
 	//ingresar en div vacio
 	newList.appendChild(nameList);
-	
 	//dar clase para que tenga misma forma y color que primer contenedor
 	newList.classList.add('newBox', 'graybackground');
 	newList.appendChild(addCard);
@@ -60,19 +59,34 @@ save.addEventListener('click', function(){
 	//añadir evento a texto de añadir tarea
 	addCard.addEventListener('click', function(){
 		addCard.classList.add('mostrar')
-	//crear textarea
-	var textArea= document.createElement('textarea');
-	textArea.classList.add('class', 'tarea')
-	//crear boton añadir
-	var addBot= document.createElement('button');
-	//texto en boton
-	var buttonContent=document.createTextNode('Añadir')
+		//crear textarea
+		var newTarea= document.createElement('textarea');
+		newTarea.classList.add('class', 'tarea')
+		//crear boton añadir
+		var addBot= document.createElement('button');
+		//texto en boton
+		var buttonContent=document.createTextNode('Añadir')
 
 
-	newList.appendChild(textArea);
-	addBot.appendChild(buttonContent);
-	newList.appendChild(addBot);
-});
+		newList.appendChild(newTarea);
+		addBot.appendChild(buttonContent);
+		newList.appendChild(addBot);
+
+		addBot.addEventListener('click', function(){
+			//rescatar nombre de tarea
+			var target= newTarea.value;
+			//limpiar textarea
+			newTarea.value='';
+			//crear elementos
+			var newTarget= document.createElement('p');
+			newTarget.setAttribute('class','white');
+			var newTargetContent=document.createTextNode(target);
+
+			newTarget.appendChild(newTargetContent);
+			newList.insertBefore(newTarget, newTarea);
+
+		})
+	});
 
 })
 

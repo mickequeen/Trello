@@ -156,7 +156,10 @@ li{
 	border-radius: 0.3em;
 }
 
-
+.white{
+	background-color: #FFF;
+	border-radius: 0.2em;
+}
 
 
 ::-webkit-input-placeholder { 
