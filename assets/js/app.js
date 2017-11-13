@@ -37,26 +37,27 @@ save.addEventListener('click', function(){
 	//crear elementos
 	var newList=document.createElement('div')
 	var nameList=document.createElement('p');
+	//dar atributo a elemento párrafo
 	nameList.setAttribute('id', 'listTitle')
 	var nameContent= document.createTextNode(listName);
 	var addCard= document.createElement('a');
+	//dar atributos a elementos link
 	addCard.setAttribute('href', '#');
 	addCard.setAttribute('id', 'add');
 	var cardContent=document.createTextNode('Añadir una tarea');
 
 	//dar hijos a padres
-
 	nameList.appendChild(nameContent);
 	addCard.appendChild(cardContent);
-
 	//ingresar en div vacio
 	newList.appendChild(nameList);
 	//dar clase para que tenga misma forma y color que primer contenedor
 	newList.classList.add('newBox', 'graybackground');
+	//seguir dando padres a hijos
 	newList.appendChild(addCard);
 	newContainer.appendChild(newList);
 
-	//añadir evento a texto de añadir tarea
+	//añadir evento a texto de añadir tarea ( o tarjeta)
 	addCard.addEventListener('click', function(){
 		addCard.classList.add('mostrar')
 		//crear textarea
@@ -67,11 +68,12 @@ save.addEventListener('click', function(){
 		//texto en boton
 		var buttonContent=document.createTextNode('Añadir')
 
-
+		//dar hijos a padres de menor a mayor
 		newList.appendChild(newTarea);
 		addBot.appendChild(buttonContent);
 		newList.appendChild(addBot);
 
+		//evento para añadir nombre de tarea a lista.
 		addBot.addEventListener('click', function(){
 			//rescatar nombre de tarea
 			var target= newTarea.value;
@@ -79,9 +81,12 @@ save.addEventListener('click', function(){
 			newTarea.value='';
 			//crear elementos
 			var newTarget= document.createElement('p');
+			//dar atributos a elemento p
 			newTarget.setAttribute('class','white');
+			//variable que contiene nodo de texto
 			var newTargetContent=document.createTextNode(target);
 
+			//dar hijos a padres en orden menor a mayor
 			newTarget.appendChild(newTargetContent);
 			newList.insertBefore(newTarget, newTarea);
 

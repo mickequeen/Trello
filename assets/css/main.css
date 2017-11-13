@@ -88,10 +88,12 @@ li{
 	vertical-align: top;
 }
 
+/*nombre de lista creado en js, clase para darle anchura y posicion en div*/
 #listTitle{
 	font-weight: bolder;
 	margin-top: 0;	
 }
+
 /*contenedor inicial*/
 .box{
 	width: 17em;
@@ -102,15 +104,18 @@ li{
 	margin-left: 5px;
 	vertical-align: top;
 }
-/*clase a usar en evento*/
+
+/*clase a usar en eventos */
 .graybackground{
 	background-color: #E2E4E6;
 }
+
 /*clase de botonera*/
 .mostrar{
 	display: none;
 }
 
+/*forma, color de formulario inicial*/
 #list{
 	width: 19.4em;
 	background-color: rgba(0,0,0, 0.15);
@@ -119,10 +124,12 @@ li{
 	border-radius: 0.3em;
 }
 
+/*relleno div botonera*/
 #buttons{
 	padding: 0.3em;
 }
 
+/*forma y color de boton de guardado*/
 #save{
 	font-size: 0.9em;
 	font-weight: bolder;
@@ -135,6 +142,7 @@ li{
 	border-radius: 0.3em;
 	border: none;
 }
+
 /*color y tamaño boton de cerrar*/
 #close{
 	display: inline-block;
@@ -144,10 +152,11 @@ li{
 	padding-top: 0.1em;
 }
 
+/*tipo display container nuevo*/
 #newContainer{
 	display: inline-block;	
-
 }
+
 /*estilo text area añadir tarea*/
 .tarea{
 	width: 19.4em;
@@ -156,18 +165,16 @@ li{
 	border-radius: 0.3em;
 }
 
+/*Clase para nueva tarjeta de tareas en div creado en js*/
 .white{
 	background-color: #FFF;
 	border-radius: 0.2em;
+	padding: 0.5em;
 }
 
-
+/*color de place holder*/
 ::-webkit-input-placeholder { 
-  color: #95B8CC;
-  opacity: 1;
+  color: #7095AA;
+  opacity: 2;
 }
 
-.after ::-webkit-input-placeholder { 
-  color: grey;
-
-}
