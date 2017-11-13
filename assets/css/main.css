@@ -130,7 +130,7 @@ li{
 }
 
 /*forma y color de boton de guardado*/
-#save{
+.green{
 	font-size: 0.9em;
 	font-weight: bolder;
 	color: #FFF;
@@ -155,8 +155,8 @@ li{
 /*tipo display container nuevo*/
 #newContainer{
 	display: inline-block;	
-}
 
+}
 /*estilo text area añadir tarea*/
 .tarea{
 	width: 19.4em;
@@ -172,9 +172,13 @@ li{
 	padding: 0.5em;
 }
 
-/*color de place holder*/
+/*añadir color a placeholder*/
 ::-webkit-input-placeholder { 
   color: #7095AA;
   opacity: 2;
 }
 
+.after ::-webkit-input-placeholder { 
+  color: grey;
+
+}

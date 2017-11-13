@@ -65,6 +65,8 @@ save.addEventListener('click', function(){
 		newTarea.classList.add('class', 'tarea')
 		//crear boton añadir
 		var addBot= document.createElement('button');
+		//agregar clase al boton para que quede bonito
+		addBot.setAttribute('class', 'green');
 		//texto en boton
 		var buttonContent=document.createTextNode('Añadir')
 
